@@ -36,10 +36,51 @@
         </div>
     </nav>
 
-    <div class="container mt-4">
-        <p>Esta es la página de contacto. Aquí puedes agregar un formulario o información de contacto.</p>
+    <div class="container mt-4 mb-5">
+        <div class="col-12 col-md-7 mx-auto p-3 bg-transparent-gray rounded-3 shadow-sm">
+            <h4 class="text-center mb-3">Contáctenos</h4>
+            <form>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico" required>
+                </div>
+                <div class="mb-3">
+                    <label for="consulta" class="form-label">Consulta o Solicitud</label>
+                    <textarea class="form-control" id="consulta" rows="4" placeholder="Escriba su consulta o solicitud aquí" required></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-dark">Enviar</button>
+                </div>
+            </form>
+        </div>
     </div>
 
+    <footer class="text-white py-4 fixed-bottom">
+        <div class="container">
+            <div class="row text-center">
+
+                <div class="col">
+                    <p class="mb-0"><strong>Dirección física:</strong></p>
+                    <p class="mb-0">Av. Providencia 1234</p>
+                    <p class="mb-0">Oficina 601, Santiago, Chile</p>
+                </div>
+                <div class="col">
+                    <p class="mb-0"><strong>Contacto telefónico:</strong></p>
+                    <p class="mb-0">+56 2 1234 5678</p>
+                </div>
+                <div class="col">
+                    <p class="mb-0"><strong>Dominio web:</strong></p>
+                    <a href="http://www.coningenio.cl" class="text-white text-decoration-none">www.coningenio.cl</a>
+                </div>
+                <div class="col">
+                    <p class="mb-0"><strong>Correo electrónico:</strong></p>
+                    <a href="mailto:info@coningenio.cl" class="text-white text-decoration-none">info@coningenio.cl</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
