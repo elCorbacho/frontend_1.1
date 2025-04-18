@@ -48,8 +48,10 @@
             </div>
         </div>
     </nav>
-    <br>
-    <div class="container mt-4" style="display: none;"> <!-- los datos de nosotros se cargarán aquí dinámicamente -->
+    <div class="container text-center" style="display: none;">
+        <img src="img/team.png" alt="logo de los servicios de la empresa" class="img-fluid" style="max-width: 100px; height: auto;" />
+    </div>
+    <div class="container mt-2" style="display: none;"> <!-- los datos de nosotros se cargarán aquí dinámicamente -->
         <div class="row g-3">
             <!-- Los servicios se cargarán aquí dinámicamente -->
         </div>
@@ -92,7 +94,7 @@
                     if (data && data.data) { // Ensure data and data.data are defined
                         for (let i = 0; i < data.data.length; i++) {
                             console.log(data.data[i]);
-                            var html = '<div class="col-12 mb-4">' +
+                            var html = '<div class="col-12 mb-1">' +
                                 '<div class="bg-transparent-gray rounded-2 p-3 service-card">' +
                                 '<p class="h5 text-center">' + data.data[i].titulo.esp + '</p>' +
                                 '<p class="text-center">' + data.data[i].descripcion.esp + '</p>' +
@@ -111,7 +113,7 @@
                         console.log(json);
                         for (let i = 0; i < json.data.length; i++) {
                             console.log(json.data[i]);
-                            var html = '<div class="col-12 mb-4">' +
+                            var html = '<div class="col-12 mb-1">' +
                                 '<div class="bg-transparent-gray rounded-2 p-3 service-card">' +
                                 '<p class="h5 text-center">' + json.data[i].titulo.esp + '</p>' +
                                 '<p class="text-center">' + json.data[i].descripcion.esp + '</p>' +
