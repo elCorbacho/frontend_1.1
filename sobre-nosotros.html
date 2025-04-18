@@ -74,7 +74,7 @@
                 }
             });
 
-            $(".container").fadeIn(500);
+            $(".container").fadeIn(800);
         });
 
         function load() {
@@ -95,7 +95,7 @@
                             var html = '<div class="col-12 mb-4">' +
                                 '<div class="bg-transparent-gray rounded-2 p-3 service-card">' +
                                 '<p class="h5 text-center">' + data.data[i].titulo.esp + '</p>' +
-                                '<p class="text-justify">' + data.data[i].descripcion.esp + '</p>' +
+                                '<p class="text-center">' + data.data[i].descripcion.esp + '</p>' +
                                 '</div>' +
                                 '</div>';
                             $(".row.g-3").append(html);
@@ -103,7 +103,7 @@
                     } else {
                         console.error("Datos no válidos:", data);
                     }
-                    $(".container").fadeIn(500); // Smoothly display the container content
+                    $(".container").fadeIn(800); // Smoothly display the container content
                 },
                 error: function(xhr, status, error) { // En caso de error leer JSON local
                     console.error("Error de lectura de datos:", error);
@@ -114,12 +114,12 @@
                             var html = '<div class="col-12 mb-4">' +
                                 '<div class="bg-transparent-gray rounded-2 p-3 service-card">' +
                                 '<p class="h5 text-center">' + json.data[i].titulo.esp + '</p>' +
-                                '<p class="text-justify">' + json.data[i].descripcion.esp + '</p>' +
+                                '<p class="text-center">' + json.data[i].descripcion.esp + '</p>' +
                                 '</div>' +
                                 '</div>';
                             $(".row.g-3").append(html);
                         }
-                        $(".container").fadeIn(500); // Smoothly display the container content
+                        $(".container").fadeIn(800); // Smoothly display the container content
                     });
                 }
             });

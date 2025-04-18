@@ -84,7 +84,7 @@
                     } else {
                         console.error("Datos no válidos:", data);
                     }
-                    $(".container").fadeIn(500); // Smoothly display the container content
+                    $(".container").fadeIn(800); // Smoothly display the container content
                 },
                 error: function(xhr, status, error) {
                     console.error("Error de lectura de datos:", error);
@@ -105,7 +105,7 @@
                         } else {
                             console.error("Datos no válidos en JSON local:", json);
                         }
-                        $(".container").fadeIn(500); // Smoothly display the container content
+                        $(".container").fadeIn(800); // Smoothly display the container content
                     });
                 }
             });
@@ -129,8 +129,9 @@
                 }
             });
 
-            $(".container").fadeIn(500);
+            $(".container").fadeIn(800);
         });
     </script>
 </body>
 </html>
+``` 
